@@ -519,16 +519,16 @@ var Component = normalizeComponent(
 
 
 
-function install(Vue) {
-  Vue.component(src_component.name, src_component);
-  Vue.directive('mask', directive);
+function install(app) {
+  app.component(src_component.name, src_component);
+  app.directive('mask', directive);
 }
 
 /* harmony default export */ var src = (install);
  // Install by default if included from script tag
 
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(install);
+if (typeof window !== 'undefined' && window.app) {
+  window.app.use(install);
 }
 // CONCATENATED MODULE: /home/neves/.config/yarn/global/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 /* concated harmony reexport */__webpack_require__.d(__webpack_exports__, "TheMask", function() { return src_component; });

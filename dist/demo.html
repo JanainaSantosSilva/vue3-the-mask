@@ -8,9 +8,12 @@
 </div>
 
 <script>
-new Vue({
-  components: {
-    demo: VueTheMask
-  }
-}).$mount('#app')
+const { createApp } = Vue;
+const app = createApp({
+    components: {
+        demo: VueTheMask.default // Adjusted for Vue 3 syntax
+    }
+});
+
+app.mount('#app');
 </script>

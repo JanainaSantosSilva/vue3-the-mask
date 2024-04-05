@@ -1,15 +1,17 @@
-import Vue from 'vue'
-import TheMaskTemplate from '../src/component.vue'
-import directive from '../src/directive'
+import { createApp } from 'vue';
+import TheMaskTemplate from '../src/component.vue';
+import directive from '../src/directive';
 
-var TheMaskComponent = Vue.extend(TheMaskTemplate)
-var TheMaskInstance = new TheMaskComponent({propsData: {mask: '#.#'}}).$mount()
-TheMaskInstance.value = '123'
+const app = createApp();
+
+const TheMaskComponent = app.component('the-mask', TheMaskTemplate);
+const TheMaskInstance = new TheMaskComponent({ props: { mask: '#.#' } });
+TheMaskInstance.value = '123';
 
 test('null value should not throw error', () => {
-  TheMaskInstance.value = null
-})
+  TheMaskInstance.value = null;
+});
 
 test('directive should accept array', () => {
-  directive({tagName: 'INPUT', dispatchEvent: function(){}}, {value: ['#.#', '##.#']})
-})
+  directive({ tagName: 'INPUT', dispatchEvent: function() {} }, { value: ['#.#', '##.#'] });
+});

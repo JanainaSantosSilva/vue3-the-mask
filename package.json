@@ -94,10 +94,10 @@
     "serve": "^6.5.7",
     "size-limit": "^0.18.0",
     "testcafe": "^0.20.0",
-    "vue": "^2.5.16",
+    "vue": "^3.3.4",
     "vue-jest": "^2.5.0",
     "vue-loader": "^14.2.2",
-    "vue-template-compiler": "^2.5.16"
+    "vue-template-compiler": "^2.7.16"
   },
   "dependencies": {
     "start-server-and-test": "^1.4.1"

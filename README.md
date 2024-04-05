@@ -22,7 +22,7 @@ npm i -S vue-the-mask
 
 ```javascript
 import VueTheMask from 'vue-the-mask'
-Vue.use(VueTheMask)
+app.use(VueTheMask)
 ```
 
 ### Local (inside the component)

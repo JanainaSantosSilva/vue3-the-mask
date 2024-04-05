@@ -1,16 +1,17 @@
-import tokens from './tokens'
-import mask from './directive'
-import TheMask from './component.vue'
+import tokens from './tokens'; // Importe os tokens, presumivelmente de um arquivo tokens.js
+import mask from './directive'; // Importe a diretiva mask de um arquivo directive.js
+import TheMask from './component.vue'; // Importe o componente TheMask de um arquivo component.vue
 
-function install(Vue) {
-  Vue.component(TheMask.name, TheMask)
-  Vue.directive('mask', mask)
+const install = (app) => {
+  app.component(TheMask.name, TheMask); // Registre o componente globalmente
+  app.directive('mask', mask); // Registre a diretiva globalmente
 }
 
-export default install
-export { TheMask, mask, tokens }
+export default install;
+export { TheMask, mask, tokens };
 
-// Install by default if included from script tag
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(install)
+// Instale por padrão se incluído de uma tag de script
+if (typeof window !== 'undefined' && window.app) {
+  install(window.app);
 }
+
