@@ -528,7 +528,7 @@ function install(app) {
  // Install by default if included from script tag
 
 if (typeof window !== 'undefined' && window.app) {
-  window.app.use(install);
+  install(window.app)
 }
 // CONCATENATED MODULE: /home/neves/.config/yarn/global/node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 /* concated harmony reexport */__webpack_require__.d(__webpack_exports__, "TheMask", function() { return src_component; });
