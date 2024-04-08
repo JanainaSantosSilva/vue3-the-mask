@@ -30,6 +30,7 @@
 
     app.use(VueTheMask);
 
+    app.config.globalProperties.$createElement = Vue.h;
     app.mount('#app');
 </script>
 </body>

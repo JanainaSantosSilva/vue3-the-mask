@@ -1,8 +1,10 @@
-import { createApp } from 'vue';
+import { createApp, h } from 'vue';
 import TheMaskTemplate from '../src/component.vue';
 import directive from '../src/directive';
 
 const app = createApp();
+
+app.config.globalProperties.$createElement = h;
 
 const TheMaskComponent = app.component('the-mask', TheMaskTemplate);
 const TheMaskInstance = new TheMaskComponent({ props: { mask: '#.#' } });
