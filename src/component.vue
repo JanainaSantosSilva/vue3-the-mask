@@ -9,6 +9,7 @@ import masker from './masker'
 
 export default {
   name: 'TheMask',
+  emits: ['input'],
   props: {
     value: [String, Number],
     mask: {
