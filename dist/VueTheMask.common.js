@@ -381,8 +381,9 @@ function directive_event(name) {
 
   }
 });
+import { h } from 'vue'
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-1d380615","hasScoped":false,"optionsId":"0","buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/component.vue
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_h;return _c('input',{directives:[{name:"mask",rawName:"v-mask",modelValue :(_vm.config), onUpdateModelValue:(value) => { _vm.config = value; }, expression:"config"}],attrs:{"type":"text"},domProps:{"value":_vm.display},on:{"input":_vm.onInput}})}
+var render = function () {var _vm=this;var _h=h;var _c=_h;return _c('input',{directives:[{name:"mask",rawName:"v-mask",modelValue :(_vm.config), onUpdateModelValue:(value) => { _vm.config = value; }, expression:"config"}],attrs:{"type":"text"},domProps:{"value":_vm.display},on:{"input":_vm.onInput}})}
 var staticRenderFns = []
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/runtime/component-normalizer.js
