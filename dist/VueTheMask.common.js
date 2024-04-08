@@ -310,6 +310,7 @@ function directive_event(name) {
 
 /* harmony default export */ var component = ({
   name: 'TheMask',
+  emits:['input'],
   props: {
     value: [String, Number],
     mask: {
